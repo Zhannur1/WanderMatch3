@@ -1,0 +1,221 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="css/style.css">
+    <title>WanderMatch | Find Your Match</title>
+</head>
+<body>
+    <header class="site-header">
+        <div class="site-navbar">
+            <a href="index.html" class="site-logo">WanderMatch</a>
+
+            <nav class="site-links">
+                <a href="index.html">Home</a>
+                <a href="about.html">Explore</a>
+                <a href="stories.html">Travel Stories</a>
+                <a href="match.html">Find Your Match</a>
+                <a href="contact.html" class="active">Start Your Journey</a>
+            </nav>
+
+            <div class="nav-actions">
+                <button type="button">Log In</button>
+                <button type="button" class="primary-button">Plan a Trip</button>
+            </div>
+        </div>
+
+        <p class="tagline">Don't choose a destination. Discover your match.</p>
+    </header>
+
+<main>
+    <section>
+    <h1>Find Your Travel Match</h1>
+
+    <p>
+        Tell us what your perfect trip looks like. Your preferences will help
+        WanderMatch find destinations that fit your travel style.
+    </p>
+
+    <form action="#" method="post">
+
+        <fieldset>
+            <legend>About You</legend>
+
+            <p>
+                <label for="full-name">Full Name</label>
+                <input
+                    type="text"
+                    id="full-name"
+                    name="full-name"
+                    placeholder="Enter your full name"
+                    required>
+            </p>
+
+            <p>
+                <label for="email">Email Address</label>
+                <input
+                    type="email"
+                    id="email"
+                    name="email"
+                    placeholder="name@example.com"
+                    required>
+            </p>
+
+            <p>
+                <label for="travel-date">Preferred Travel Date</label>
+                <input
+                    type="date"
+                    id="travel-date"
+                    name="travel-date">
+            </p>
+
+            <p>
+                <label for="trip-length">Trip Length (days)</label>
+                <input
+                    type="number"
+                    id="trip-length"
+                    name="trip-length"
+                    min="1"
+                    max="30"
+                    value="7">
+            </p>
+        </fieldset>
+                <fieldset>
+            <legend>What's Your Travel Style?</legend>
+
+            <p>Choose the option that describes you best:</p>
+
+            <input
+                type="radio"
+                id="relaxation"
+                name="travel-style"
+                value="relaxation"
+                required>
+            <label for="relaxation">Relaxation</label>
+
+            <input
+                type="radio"
+                id="adventure"
+                name="travel-style"
+                value="adventure">
+            <label for="adventure">Adventure</label>
+
+            <input
+                type="radio"
+                id="culture"
+                name="travel-style"
+                value="culture">
+            <label for="culture">Culture</label>
+
+            <input
+                type="radio"
+                id="city"
+                name="travel-style"
+                value="city">
+            <label for="city">City Life</label>
+        </fieldset>
+             <fieldset>
+            <legend>What Matters Most to You?</legend>
+
+            <p>Select all that apply:</p>
+
+            <input
+                type="checkbox"
+                id="nature"
+                name="interests"
+                value="nature">
+            <label for="nature">Nature</label>
+
+            <input
+                type="checkbox"
+                id="food"
+                name="interests"
+                value="food">
+            <label for="food">Food</label>
+
+            <input
+                type="checkbox"
+                id="history"
+                name="interests"
+                value="history">
+            <label for="history">History</label>
+
+            <input
+                type="checkbox"
+                id="nightlife"
+                name="interests"
+                value="nightlife">
+            <label for="nightlife">Nightlife</label>
+
+            <input
+                type="checkbox"
+                id="beaches"
+                name="interests"
+                value="beaches">
+            <label for="beaches">Beaches</label>
+        </fieldset>
+        <fieldset>
+
+            <legend>Your Travel Budget</legend>
+            <p>
+                <label for="travel-budget">
+            What is your total budget for this trip? (USD)
+        </label>
+
+        <input
+            type="number"
+            id="travel-budget"
+            name="travel-budget"
+            min="100"
+            max="50000"
+            step="50"
+            placeholder="e.g. 2000"
+            required>
+        
+        </p>
+        </fieldset>
+        <fieldset>
+            <legend>Personal Touch</legend>
+
+            <p>
+                <label for="travel-color">
+                    Choose a color that represents your dream trip:
+                </label>
+
+                <input
+                    type="color"
+                    id="travel-color"
+                    name="travel-color"
+                    value="#4f86c6">
+            </p>
+        </fieldset>  
+            <fieldset>
+            <legend>Your Dream Trip</legend>
+
+            <p>
+                <label for="dream-trip">
+                    Describe your ideal travel experience:
+                </label>
+            </p>
+
+            <textarea
+                id="dream-trip"
+                name="dream-trip"
+                rows="5"
+                cols="40"
+                placeholder="For example: I want mountains, local food, peaceful places, and some adventure..."></textarea>
+        </fieldset>
+            <p>
+            <button type="submit">Find My Match</button>
+        </p>
+
+    </form>
+</section>     
+</main>
+
+<footer>
+    <p>2026 WanderMatch. Created by Zhannur Maratova.</p>
+</footer>
+</body>
+</html>
